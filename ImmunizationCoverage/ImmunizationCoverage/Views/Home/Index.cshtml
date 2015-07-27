@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div ng-app="app">
+
+    <div ng-controller="ImmunizationCoverCtrl">
+        <h2>Immunization Coverage Graph</h2>
+        <div>
+            <canvas id="line" class="chart chart-line" data="data" height="100" labels="labels"
+                    legend="true" series="series" click="onClick"></canvas> 
+        </div>
+    </div>
+</div>
